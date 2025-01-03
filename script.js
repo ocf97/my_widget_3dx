@@ -2,24 +2,24 @@
  * Create a Backpack object, populate some HTML to display its properties.
  */
 
-const backpack = {
-  name: "Everyday Backpack",
-  volume: 30,
-  color: "grey",
-  pocketNum: 15,
-  strapLength: {
-    left: 26,
-    right: 26,
-  },
-  lidOpen: false,
-  toggleLid: function (lidStatus) {
-    this.lidOpen = lidStatus;
-  },
-  newStrapLength: function (lengthLeft, lengthRight) {
-    this.strapLength.left = lengthLeft;
-    this.strapLength.right = lengthRight;
-  },
-};
+// const backpack = {
+//   name: "Everyday Backpack",
+//   volume: 30,
+//   color: "grey",
+//   pocketNum: 15,
+//   strapLength: {
+//     left: 26,
+//     right: 26,
+//   },
+//   lidOpen: false,
+//   toggleLid: function (lidStatus) {
+//     this.lidOpen = lidStatus;
+//   },
+//   newStrapLength: function (lengthLeft, lengthRight) {
+//     this.strapLength.left = lengthLeft;
+//     this.strapLength.right = lengthRight;
+//   },
+// };
 
 // const markup = (backpack) => {
 //   return `
@@ -40,14 +40,13 @@ const backpack = {
 
 function show() {
   return `<h1>
-  ${backpack.color}
-  ${backpack.pocketNum}
+  bonjour
   </h1>
   `;
 };
 
-console.log("Volume :", backpack.color);
-console.log("Number of pockets: :", backpack.pocketNum);
+// console.log("Volume :", backpack.color);
+// console.log("Number of pockets: :", backpack.pocketNum);
 
 const main = document.createElement("main");
 main.innerHTML = show();
