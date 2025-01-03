@@ -1,11 +1,6 @@
 /**
  * Create a Backpack object, populate some HTML to display its properties.
  */
-const updateBackpack = (update) => {
-  let main = document.querySelector("main");
-  main.innerHTML = markup(backpack);
-  console.info(update);
-};
 
 const backpack = {
   name: "Everyday Backpack",
@@ -19,12 +14,10 @@ const backpack = {
   lidOpen: false,
   toggleLid: function (lidStatus) {
     this.lidOpen = lidStatus;
-    updateBackpack(`Lid status changed.`);
   },
   newStrapLength: function (lengthLeft, lengthRight) {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
-    updateBackpack(`Strap lengths updated.`);
   },
 };
 
