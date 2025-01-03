@@ -45,9 +45,17 @@ const backpack = {
 // `;
 // };
 
+function show() {
+  return `<h1>
+  ${backpack.color}
+  ${backpack.pocketNum}
+  </h1>
+  `;
+};
+
 console.log("Volume :", backpack.color);
 console.log("Number of pockets: :", backpack.pocketNum);
 
 const main = document.createElement("main");
-// main.innerHTML = markup(backpack);
+main.innerHTML = show();
 document.body.appendChild(main);
