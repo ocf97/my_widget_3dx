@@ -49,5 +49,5 @@ console.log("Volume :", backpack.color);
 console.log("Number of pockets: :", backpack.pocketNum);
 
 const main = document.createElement("main");
-main.innerHTML = markup(backpack);
+// main.innerHTML = markup(backpack);
 document.body.appendChild(main);
